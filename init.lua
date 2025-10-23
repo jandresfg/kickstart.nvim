@@ -156,7 +156,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 0
+vim.opt.scrolloff = 10
 
 -- commands for fold
 vim.opt.foldcolumn = '4'
