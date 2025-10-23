@@ -345,7 +345,7 @@ require('lazy').setup({
         { '<leader>s', group = '[S]earch' },
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
-        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+        { '<leader>k', group = 'Git Hunk', mode = { 'n', 'v' } },
       },
     },
   },
@@ -587,8 +587,9 @@ require('lazy').setup({
       -- …etc.
     },
     version = '^1.0.0', -- optional: only update when a new 1.x version is released
-    vim.keymap.set('n', '<leader><Right>', '<cmd>BufferNext<cr>', { desc = 'Next Buffer' }),
-    vim.keymap.set('n', '<leader><Left>', '<cmd>BufferPrevious<cr>', { desc = 'Previous Buffer' }),
+    vim.keymap.set('n', '<leader>q', '<cmd>BufferClose<cr>', { desc = 'Close Buffer' }),
+    vim.keymap.set('n', '<leader>l', '<cmd>BufferNext<cr>', { desc = 'Next Buffer' }),
+    vim.keymap.set('n', '<leader>h', '<cmd>BufferPrevious<cr>', { desc = 'Previous Buffer' }),
   },
   {
     'vimlab/split-term.vim',
