@@ -753,6 +753,13 @@ require('lazy').setup({
       smear_insert_mode = true,
     },
   },
+  {
+    'FabijanZulj/blame.nvim',
+    lazy = false,
+    config = function()
+      require('blame').setup {}
+    end,
+  },
 
   -- LSP Plugins
   {
