@@ -11,6 +11,10 @@ return {
     opts = {
       hijack_netrw_behavior = 'open_current',
       filesystem = {
+        follow_current_file = {
+          enabled = true,
+          leave_dirs_open = false,
+        },
         filtered_items = {
           visible = true,
           hide_dotfiles = false,
@@ -19,7 +23,7 @@ return {
       },
     },
     keys = {
-      { '<leader>tt', '<cmd>Neotree<cr>', desc = 'Open file tree' },
+      { '<leader>tt', '<cmd>Neotree reveal<cr>', desc = 'Open file tree (reveal current file)' },
     },
   },
 }
